@@ -1,7 +1,5 @@
 package br.com.teste.api;
 
-import static org.hamcrest.Matchers.equalTo;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,7 +13,6 @@ public class Cep {
 
 	@Test
 	public void cepValido() {
-
 		RestAssured.baseURI = BASE_URL;
 		RequestSpecification httpRequest = RestAssured.given();
 		Response response = httpRequest.request(Method.GET, "/58400025/json/");
